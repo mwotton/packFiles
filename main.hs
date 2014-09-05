@@ -7,5 +7,4 @@ main = do
   let bins = 16
   files <- getArgs
   f <- evenPack files bins
---  mapM (putStrLn . unwords) f
-  mapM print f
+  mapM (putStrLn . unwords . snd) f
